@@ -1,76 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Explore Sylhetpedia</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #f0f8ff;
-  }
-  h2 {
-    color: #05445e;
-  }
-  .category {
-    margin-bottom: 40px;
-  }
-  .item {
-    background-color: #ffffffcc;
-    padding: 15px;
-    border-radius: 10px;
-    margin: 10px 0;
-    box-shadow: 2px 2px 8px #00000020;
-  }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Explore — Sylhetpedia</title>
+  <meta name="description" content="Browse schools, madrasas, famous people and tourist spots of Sylhet, Sylhetpedia." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/app.js"></script>
 </head>
 <body>
-<h1>Explore Sylhetpedia</h1>
-
-<div class="category">
-  <h2>Schools</h2>
-  <div class="item">
-    <strong>Sylhet Central Public School & College</strong><br>
-    Founded: 1985<br>
-    Description: One of the oldest schools in Sylhet.
-  </div>
-  <div class="item">
-    <strong>Border Guard School and College, Sylhet</strong><br>
-    Founded: 1990<br>
-    Description: A well-known school for academic excellence.
-  </div>
-  <!-- Add 198 more schools similarly -->
-</div>
-
-<div class="category">
-  <h2>Madrasas</h2>
-  <div class="item">
-    <strong>Al-Jamiatul Arabia, Sylhet</strong><br>
-    Founded: 1970<br>
-    Description: Famous madrasa for Islamic education.
-  </div>
-  <!-- Add 99 more madrasas -->
-</div>
-
-<div class="category">
-  <h2>Famous People</h2>
-  <div class="item">
-    <strong>Abdul Matin</strong><br>
-    Profession: Poet<br>
-    Work: Famous Sylheti poet.
-  </div>
-  <!-- Add 249 more famous people -->
-</div>
-
-<div class="category">
-  <h2>Tourist Spots</h2>
-  <div class="item">
-    <strong>Jaflong</strong><br>
-    Description: Scenic river and stone collection area.
-  </div>
-  <!-- Add 49 more tourist spots -->
-</div>
-
+  <header><a href="/">← Home</a><input id="explore-search" placeholder="Search in explore..." /></header>
+  <main id="content">
+    <section id="schools"><h2>Schools</h2><div class="list" id="schools-list"></div></section>
+    <section id="madrasas"><h2>Madrasas</h2><div class="list" id="madrasas-list"></div></section>
+    <section id="people"><h2>Famous People</h2><div class="list" id="people-list"></div></section>
+    <section id="places"><h2>Tourist Spots</h2><div class="list" id="places-list"></div></section>
+  </main>
 </body>
 </html>
